@@ -16,7 +16,7 @@
          /* style Tab Nav */
         .navtab {
             margin: 0 auto;
-            width: auto;
+            max-width:100%;
             height: 60px;
             padding-top: 10px;
             padding-bottom: 5px;
@@ -42,25 +42,33 @@
         }
          /* End style Tab Nav */
 
-          /* style Tab Nav */
+        /* style section1 */
         .section1{
-            width: auto;
-            height: 420px;
-            text-align: center;
-            justify-content: center;
+            max-width:100%;
+            height: auto;
             background-color: #f9f9f9;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
         .container2{
             display: flex;
             flex-direction: row;
-            margin-left: 15%;
-            margin-right: 15%;
-            padding-top: 3%;
-            padding-bottom: 4%;
+            text-align: center;
+            justify-content: center;
         }
         .infoevent1{
-            padding: 20px 40px 20px 40px;
+            padding-left: 50px;
+            width: 350px;
         }
+        .YTclip{
+            border-radius: 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+        /*End style section1 */
+
+        /* style section2 */
+
     </style>
 </head>
 <body>
@@ -75,19 +83,24 @@
         </div>
     
         <!--ส่วนที่1-->
-          <div class="section1">
+        <div class="section1">
             <div class="container2">
-            <div class="VDO1">
-                <iframe width="480" height="315" src="https://www.youtube.com/embed/uCFtLfpQwt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="VDO1">
+                    <iframe class="YTclip" width="480" height="315" src="https://www.youtube.com/embed/uCFtLfpQwt4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="infoevent1">
+                    <h1 style="color: rgb(74, 134, 38);">Clean Cites Life</h1>
+                    <p font-size="16px">Clean Cites Life เป็นการรณรงค์กสหาฟวสกาหวสฟากวหฟาวกาหสวฟากสาหฟวสากสวหฟาวกาฟหสากหาฟวกาหฟา
+                        <br>jdlkfjldksjlfjsdljflsjdsfddsadasdsadsadadss</p>
+                        <a href="url"><input type="button" class="buttonmenu" id="buteventinfo1" value="อ่านเพิ่มเติม" ></a>
+                </div>
             </div>
-            <div class="infoevent1"> 
-                <h1>Clean Cites Life</h1>
-                <p font-size="16px">Clean Cites Life เป็นการรณรงค์กสหาฟวสกาหวสฟากวหฟาวกาหสวฟากสาหฟวสากสวหฟาวกาฟหสากหาฟวกาหฟา <br>jdlkfjldksjlfjsdljflsjdsfddsadasdsadsadadss</p>
-                <input type="button" id="buteventinfo1" value="อ่านเพิ่มเติม">
-            </div>
-            </div>
-          </div>
-    
         </div>
+
+        
+
 </body>
 </html>
