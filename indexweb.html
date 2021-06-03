@@ -16,7 +16,7 @@
          /* style Tab Nav */
         .navtab {
             margin: 0 auto;
-            width: 100%;
+            width: auto;
             height: 60px;
             padding-top: 10px;
             padding-bottom: 5px;
@@ -52,12 +52,21 @@
         }
 
         .container2{
-            display: flex;
             padding-top: 4%;
             padding-bottom: 4%;
-            margin-left: 15%;
-            margin-right: 15%;
         }
+        @media screen and (min-width:75cm) {
+        .VDO1{
+            width: 30%;
+            float: left;
+        }
+        .infoevent1{
+            width: 4%;
+            float: left;
+        }
+            
+        }
+
     </style>
 </head>
 <body>
@@ -74,7 +83,7 @@
         <!--ส่วนที่1-->
           <div class="section1">
             <div class="container2">
-            <div id="VDO1">
+            <div class="VDO1">
                 <iframe width="480" height="315" src="https://www.youtube.com/embed/uCFtLfpQwt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="infoevent1"> 
