@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Move to Next</title>
+    <link rel="icon" href="https://i.ibb.co/0B2WJXw/icontitle.png" type = "image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <style>
@@ -54,6 +55,9 @@
             background-color: #f9f9f9;
             
         }
+        .space2 {
+            width: 10%;
+        }
         .container2{
             width:100%;
             display: flex;
@@ -63,14 +67,9 @@
             padding-top: 50px;
             padding-bottom: 50px;
         }
-
-        .VDO1{
-            padding-top: ;
-        }
         .infoevent1{
             margin: 0;
             width: 300px;
-
         }
         .YTclip{
             justify-content: center;
@@ -87,11 +86,72 @@
                 padding-left: 15%;
                 padding-right:15%;
             }
+            .space2 {
+            width: 0%;
+            }
+            .YTclip{
+                width: auto;
+                height: auto;
+
+            }
         }
         /*End style section1 */
 
         /* style section2 */
+        .section3{
+            width:100%;
+            height: auto;
+            background-color: #718f6b;
+        }
+        .container4{
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .imgshow{
+            margin: 0;
+            padding-top: 10px;
+            width: 300px;
+            height: 200px;
+        }
+        .piccamp1{
+            width: 100%;
+            height: auto;
+        }
+        .infoevent2{
+            margin: 0;    
+            width: 300px;
+        }
+        .buttonjoincp{
+            border:none;
+            font-size: 14px;
+            margin-top: 5px;
+            padding: 14px 30px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            border-radius: 50px;
+            background-color: #ffffff;
+            width: 70%;
+        }
+        .space3 {
+            width: 5%;
+        }
+        @media screen and (max-width: 700px){
+            .section3, .container4, .infoevent2, .imgshow{
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding-bottom: 0px;
+            flex-direction: column;}
+            .space2 {
+            height: 20px;
+            }
 
+        }
     </style>
 </head>
 <body>
@@ -109,20 +169,34 @@
         <div class="section1">
             <div class="container2">
                 <div class="VDO1">
-                    <iframe class="YTclip" width="300px" height="160px" padding-top= "3%" src="https://www.youtube.com/embed/uCFtLfpQwt4"
+                    <iframe class="YTclip" width="360px" height="200px" padding-top= "3%" src="https://www.youtube.com/embed/uCFtLfpQwt4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
+                <div class="space2"></div>
                 <div class="infoevent1">
-                    <h1 style="color: rgb(74, 134, 38); margin-top: 0px; margin-bottom: 0px;">Clean Cites Life</h1>
-                    <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">Clean Cites Life เป็นการรณรงค์กสหาdsadsadsadsadฟวสกาหวสฟากวหฟาวกาหสวฟากสาหฟวสากสวหฟาวกาฟหสากหาฟวกาหฟา</p>
-                    <a href="url"><input type="button" class="buttonmenu" id="buteventinfo1" value="อ่านเพิ่มเติม" ></a>
+                    <h1 style="color: rgb(74, 134, 38); margin-top: 0px; margin-bottom: 0px;">Clean Cities Life</h1>
+                    <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">โครงการ Clean Cities Life
+                        เป็นโครงการที่รณรงค์ลดการปล่อยก๊าซคาร์บอนมอนนอกไซด์จากรถยนต์สู่อากาศ ด้วยการช่วยกันลดการใช้ยานพาหนะส่วนตัวที่มีการเผาไหม้ของเชื่อเพลิงในชีวิตประจำวันของชาวเมืองกรุง เพื่อสุขภาพและสิ่งแวดล้อมที่ดีขึ้นของเราทุกคน</p>
                 </div>
             </div>
         </div>
 
-        
+        <!--ส่วนที่3-->
+        <div class="section3">
+            <div class="container4">
+                <div class="infoevent2">
+                    <h1 style="color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">มาร่วมเป็นส่วนหนึ่ง</h1>
+                    <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">โครงการ Clean Cities Life เป็นโครงการที่รณรงค์ลดการปล่อยก๊าซคาร์บอนมอนนอกไซด์จากรถยนต์สู่อากาศ ด้วยการช่วยกันลดการใช้ยานพาหนะส่วนตัวที่มีการเผาไหม้ของเชื่อเพลิงในชีวิตประจำวันของชาวเมืองกรุง เพื่อสุขภาพและสิ่งแวดล้อมที่ดีขึ้นของเราทุกคน</p>
+                    <input type="button" id="buteventinfo1" class="buttonjoincp" value="เข้าร่วมแคมแปญ" style="margin-right: 15%; margin-left: 15%;">
+                </div>
+                <div class="space3"></div>
+                <div class="imgshow">
+                    <img src="https://i.ibb.co/nbMY3Rz/Portrait-of-man-with-placard-and-protective-suit-on-global-strike-for-climate-change.jpg"  class="piccamp1">
+                </div>
+            </div>
+        </div>
 
 </body>
 </html>
