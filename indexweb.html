@@ -16,14 +16,14 @@
          /* style Tab Nav */
         .navtab {
             margin: 0 auto;
-            max-width:100%;
+            width:100%;
             height: 60px;
             padding-top: 10px;
             padding-bottom: 5px;
             background: rgb(255, 255, 255);  
         }
         .space {
-            flex-grow: 9;
+            flex-grow: 8;
         }
         .container1{
             display: flex;
@@ -40,30 +40,50 @@
             border-radius: 50px;
             background-color: #4CAF50;
         }
+        @media screen and (max-width: 300px){
+            .navtab, .space, .container1, .buttonmenu{
+            width: 100%;}
+        }
+
          /* End style Tab Nav */
 
         /* style section1 */
         .section1{
-            max-width:100%;
+            width:100%;
             height: auto;
             background-color: #f9f9f9;
             padding-top: 50px;
             padding-bottom: 50px;
         }
         .container2{
-            display: flex;
-            flex-direction: row;
+            width:100%;
+
             text-align: center;
             justify-content: center;
         }
         .infoevent1{
-            padding-left: 50px;
-            width: 350px;
+            width: 100%;
         }
         .YTclip{
             border-radius: 50px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             text-align: center;
+
+            
+        }
+        @media screen and (max-width: 360px){
+            .section1, .container2, .infoevent1{
+            width: 100%;}
+            .YTclip{
+                width:"300px"}
+            }
+        }
+        @media screen and (max-width: 600px){
+            .section1, .container2, .infoevent1{
+            width: 100%;}     
+            .YTclip{
+                size: 50%;
+            }   
         }
         /*End style section1 */
 
@@ -86,7 +106,7 @@
         <div class="section1">
             <div class="container2">
                 <div class="VDO1">
-                    <iframe class="YTclip" width="480" height="315" src="https://www.youtube.com/embed/uCFtLfpQwt4"
+                    <iframe class="YTclip" width="300px" height="160px" src="https://www.youtube.com/embed/uCFtLfpQwt4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
