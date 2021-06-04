@@ -52,38 +52,41 @@
             width:100%;
             height: auto;
             background-color: #f9f9f9;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            
         }
         .container2{
             width:100%;
-
+            display: flex;
+            flex-direction: row;
             text-align: center;
             justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .VDO1{
+            padding-top: ;
         }
         .infoevent1{
-            width: 100%;
+            margin: 0;
+            width: 300px;
+
         }
         .YTclip{
+            justify-content: center;
             border-radius: 50px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            text-align: center;
-
-            
         }
-        @media screen and (max-width: 360px){
+        @media screen and (max-width: 700px){
             .section1, .container2, .infoevent1{
-            width: 100%;}
-            .YTclip{
-                width:"300px"}
+            width: 100%;
+            display: flex;
+            flex-direction: column;}
+            .parainfo1{
+                width: 70%;
+                padding-left: 15%;
+                padding-right:15%;
             }
-        }
-        @media screen and (max-width: 600px){
-            .section1, .container2, .infoevent1{
-            width: 100%;}     
-            .YTclip{
-                size: 50%;
-            }   
         }
         /*End style section1 */
 
@@ -96,7 +99,7 @@
         <!--ส่วนแท็บด้านบน*-->
         <div class="navtab">
         <div class="container1">
-            <div class="logomovetonext"><img src="images/logomovetonext.PNG" class="bar_logo" width="90px" height="50px"></div>
+            <div class="logomovetonext"><img src="https://i.ibb.co/Fqc4Rtj/logomovetonext.png" alt="logomovetonext" class="bar_logo" width="90px" height="50px"></div>
             <div class="space"></div>
             <div class="butmenu"><input type="button" value="Contact Us" class="buttonmenu" style="color: rgb(255, 255, 255);"></div>
         </div>
@@ -106,16 +109,15 @@
         <div class="section1">
             <div class="container2">
                 <div class="VDO1">
-                    <iframe class="YTclip" width="300px" height="160px" src="https://www.youtube.com/embed/uCFtLfpQwt4"
+                    <iframe class="YTclip" width="300px" height="160px" padding-top= "3%" src="https://www.youtube.com/embed/uCFtLfpQwt4"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="infoevent1">
-                    <h1 style="color: rgb(74, 134, 38);">Clean Cites Life</h1>
-                    <p font-size="16px">Clean Cites Life เป็นการรณรงค์กสหาฟวสกาหวสฟากวหฟาวกาหสวฟากสาหฟวสากสวหฟาวกาฟหสากหาฟวกาหฟา
-                        <br>jdlkfjldksjlfjsdljflsjdsfddsadasdsadsadadss</p>
-                        <a href="url"><input type="button" class="buttonmenu" id="buteventinfo1" value="อ่านเพิ่มเติม" ></a>
+                    <h1 style="color: rgb(74, 134, 38); margin-top: 0px; margin-bottom: 0px;">Clean Cites Life</h1>
+                    <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">Clean Cites Life เป็นการรณรงค์กสหาdsadsadsadsadฟวสกาหวสฟากวหฟาวกาหสวฟากสาหฟวสากสวหฟาวกาฟหสากหาฟวกาหฟา</p>
+                    <a href="url"><input type="button" class="buttonmenu" id="buteventinfo1" value="อ่านเพิ่มเติม" ></a>
                 </div>
             </div>
         </div>
