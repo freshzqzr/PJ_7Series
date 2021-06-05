@@ -55,6 +55,7 @@
             background-color: #f9f9f9;
             
         }
+        
         .space2 {
             width: 10%;
         }
@@ -102,11 +103,14 @@
             text-align: center;
             width:100%;
             height: auto;
-            background-color: #ffffff;
+            background-image: url("https://i.ibb.co/pWzMSDN/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
             padding-top: 1%;
-            padding-bottom: 1%;
+            padding-bottom: 2%;
             margin: 0;
         }
+
         div.container3{
             text-align: center;
             justify-content: center;
@@ -127,6 +131,7 @@
             overflow: hidden;
             position: relative;
             display:inline-block;
+           
 
         }
 
@@ -134,11 +139,13 @@
             position: absolute;
             height: 140px;
             width: 100%;
-            background-color: #ffffff;
+            background-color: #c8d5c3;
             bottom: 0; 
+            padding-bottom: 10px;
         }
 
         h4{ 
+            text-align: left;
             padding:0;
             margin:10px 0 10px 15px;
             font-size:13;
@@ -156,7 +163,7 @@
         }
 
         @media screen and (max-width: 1300px){
-            .section2,.container2{
+            .section2, h2{
             width: 100%;
             height: auto;}
             div.container3{
@@ -164,27 +171,29 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr  1fr;
                 column-gap: 10px;
-                padding: 0%  40% 0% 40%;
+                padding: 0%  30% 0% 30%;
 
             }
         }
 
         @media screen and (max-width: 700px){
-            .section2,.container2,h2 {
+            .section2,div.container3, h2 {
             width: 100%;
-            height: auto;}
+            height: auto;
+            }
             div.container3{
                 display: grid;
+                width: 234px;
                 grid-template-columns: 1fr ;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
+                row-gap: 10px;
+                padding: 0;
+                margin: 0;
                 padding: 0%  0% 0% 19%;
                 text-align: center;
             justify-content: center;
             }
         }
-
-        
-
 
         /* style section3 */
         .section3{
@@ -353,7 +362,7 @@
                 <div class="infoevent2">
                     <h1 style="color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">มาร่วมเป็นส่วนหนึ่ง</h1>
                     <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">โครงการ Clean Cities Life เป็นโครงการที่รณรงค์ลดการปล่อยก๊าซคาร์บอนมอนนอกไซด์จากรถยนต์สู่อากาศ ด้วยการช่วยกันลดการใช้ยานพาหนะส่วนตัวที่มีการเผาไหม้ของเชื่อเพลิงในชีวิตประจำวันของชาวเมืองกรุง เพื่อสุขภาพและสิ่งแวดล้อมที่ดีขึ้นของเราทุกคน</p>
-                    <input type="button" id="buteventinfo1" class="buttonjoincp" value="เข้าร่วมแคมแปญ" style="margin-right: 15%; margin-left: 15%;">
+                    <a href="https://freshzqzr.github.io/PJ_7Series/registerpage.html"><input type="button" id="buteventinfo1" class="buttonjoincp" value="เข้าร่วมแคมแปญ" style="font-family: 'Prompt', sans-serif;margin-right: 15%; margin-left: 15%;"></a>
                 </div>
                 <div class="space3"></div>
                 <div class="imgshow">
