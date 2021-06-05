@@ -105,16 +105,18 @@
             height: auto;
             background-image: url("https://i.ibb.co/pWzMSDN/bg.jpg");
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-position: center;
+            background-size: cover;
             padding-top: 1%;
             padding-bottom: 2%;
+            position: relative;
             margin: 0;
         }
 
         div.container3{
-            text-align: center;
-            justify-content: center;
-            width: -50%;
+        text-align: center;
+        justify-content: center;
+         width: -50%;
         padding: 0%  20% 0% 20%;
         align-items:center;
         display: grid;
@@ -131,8 +133,7 @@
             overflow: hidden;
             position: relative;
             display:inline-block;
-           
-
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         .txtBox3{
@@ -147,24 +148,21 @@
         h4{ 
             text-align: left;
             padding:0;
-            margin:10px 0 10px 15px;
+            margin:10px 0 5px 15px;
             font-size:13;
             font-weight:bold;
-            color:#e6540c;
+            color:#ffffff;
 }
-
-        h5{ 
-            padding:0;
-            margin:10px 0 10px 15px;
-            font-size:16;
-            font-weight:400;
-            text-transform:uppercase;
-            color:rgb(230,230,230);
+        .commenttext{
+            padding: 0px 10px 5px 10px;
         }
+
+        
 
         @media screen and (max-width: 1300px){
             .section2, h2{
             width: 100%;
+
             height: auto;}
             div.container3{
                 display: grid;
@@ -172,13 +170,16 @@
                 grid-template-rows: 1fr  1fr;
                 column-gap: 10px;
                 padding: 0%  30% 0% 30%;
-
             }
+
+               
+
         }
 
         @media screen and (max-width: 700px){
             .section2,div.container3, h2 {
             width: 100%;
+            background-position: center;
             height: auto;
             }
             div.container3{
@@ -200,6 +201,7 @@
             width:100%;
             height: auto;
             background-color: #718f6b;
+            color: white;
         }
         .container4{
             height: auto;
@@ -214,12 +216,14 @@
         .imgshow{
             margin: 0;
             padding-top: 10px;
-            width: 300px;
-            height: 200px;
+            width: 350px;
+            height: 250px;
+
         }
         .piccamp1{
             width: 100%;
             height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         .infoevent2{
             margin: 0;    
@@ -239,6 +243,15 @@
         .space3 {
             width: 5%;
         }
+
+        h5{ 
+            padding:0;
+            margin:10px 0 10px 15px;
+            font-size:16;
+            font-weight:400;
+            text-transform:uppercase;
+            color:rgb(230,230,230);
+        }
         @media screen and (max-width: 700px){
             .section3, .container4, .infoevent2, .imgshow{
             width: 100%;
@@ -250,7 +263,10 @@
             height: 20px;
             }
         }
+        /*End style section3 */
 
+
+        /*Footer*/
         .section4{
             width:100%;
             height: auto;
@@ -265,7 +281,6 @@
             text-align: left;
             justify-content: center;
         }
-
         @media screen and (max-width: 700px){
             .section4, .container5{
             width: 100%;
@@ -273,7 +288,7 @@
             padding-top: 3%;
             padding-bottom: 3%;}
         }
-
+        /*End Footer*/
 
     </style>
 </head>
@@ -282,9 +297,10 @@
         <!--ส่วนแท็บด้านบน*-->
         <div class="navtab">
         <div class="container1">
-            <div class="logomovetonext"><img src="https://i.ibb.co/Fqc4Rtj/logomovetonext.png" alt="logomovetonext" class="bar_logo" width="90px" height="50px"></div>
+            <a href="https://freshzqzr.github.io/PJ_7Series/indexweb.html"><div class="logomovetonext"><img src="https://i.ibb.co/Fqc4Rtj/logomovetonext.png" alt="logomovetonext"
+                class="bar_logo" width="90px" height="50px"></div></a>
             <div class="space"></div>
-            <div class="butmenu"><input type="button" value="Contact Us" class="buttonmenu" style="color: rgb(255, 255, 255);"></div>
+            <div class="butmenu"><a href="https://www.facebook.com/FreshZOfficial"><input onclick="www.facebook.com/FreshZOfficial" type="button" value="Contact Us" class="buttonmenu" style="color: rgb(255, 255, 255);"></div></a>
         </div>
         </div>
     
@@ -314,8 +330,8 @@
                 <div class="theBox3">
                     <img src="http://travel.mthai.com/app/uploads/2013/08/infinity-tower-dubai-uae-1024x682.jpg">
                     <div class="txtBox3">
-                        <h4>2014 02 16</h4>
-                        <p>Nunc lacinia ante nunc ac lobortis
+                        <h4>K'Ton</h4>
+                        <p style="margin-top: 0px;margin-bottom: 0px;">Nunc lacinia ante nunc ac lobortis
                             ipsum. Interdum adipiscing gravida
                             odio porttitor sem non mi integer
                             non faucibus.</p>
@@ -325,19 +341,16 @@
                 <div class="theBox3">
                     <img src="http://travel.mthai.com/app/uploads/2012/09/10Two-International-Finance-Centre-Hong-Kong.jpg">
                     <div class="txtBox3">
-                        <h4>2014 02 16</h4>
-                        <p>Nunc lacinia ante nunc ac lobortis
-                            ipsum. Interdum adipiscing gravida
-                            odio porttitor sem non mi integer
-                            non faucibus.</p>
+                        <h4>K'Ton</h4>
+                        <p class="commenttext"style="margin-top: 0px;margin-bottom: 0px;"> อากาศเย็นๆแบบนี้วิ่งออกกำลังกายไปซื้อของหน้าหมู่บ้าน แทนการใช้รถมอเตอร์ไซค์ช่วยลดโลกร้อน #CleanCitiesLife</p>
                     </div>
                 </div>
         
                 <div class="theBox3">
                     <img src="https://undubzapp.com/wp-content/uploads/2018/09/10-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%94%E0%B8%B9%E0%B9%84%E0%B8%9A1.jpg">
                     <div class="txtBox3">
-                        <h4>2014 02 16</h4>
-                        <p>Nunc lacinia ante nunc ac lobortis
+                        <h4>K'Ton</h4>
+                        <p style="margin-top: 0px;margin-bottom: 0px;">Nunc lacinia ante nunc ac lobortis
                             ipsum. Interdum adipiscing gravida
                             odio porttitor sem non mi integer
                             non faucibus.</p>
@@ -345,13 +358,10 @@
                 </div>
 
                 <div class="theBox3">
-                    <img src="https://travel.mthai.com/app/uploads/2018/11/Fantastic-Building-1.jpg">
+                    <img width="300px" height="200px" src="https://i3.wp.com/motortrivia.com/wp-content/uploads/2021/01/tesla-model-3-and-y-made-in-china-2021-01-770x511_c.jpg">
                     <div class="txtBox3">
-                        <h4>K'Tony</h4>
-                        <p>Nunc lacinia ante nunc ac lobortis
-                            ipsum. Interdum adipiscing gravida
-                            odio porttitor sem non mi integer
-                            non faucibus.</p>
+                        <h4>Artwongsathorn</h4>
+                        <p style="margin-top: 0px;margin-bottom: 0px;">วันนี้ฤกษ์งามยามดีถือโอกาสเทิร์นรถคันเก่าที่บ้านเริ่มสร้างคาร์บอนไดออกไซด์ให้กับโลกเยอะแล้วมาใช้รถยนต์ไฟฟ้าแทน</p>
                     </div>
                 </div>
             </div>
@@ -361,8 +371,8 @@
             <div class="container4">
                 <div class="infoevent2">
                     <h1 style="color: rgb(255, 255, 255); margin-top: 0px; margin-bottom: 0px;">มาร่วมเป็นส่วนหนึ่ง</h1>
-                    <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">โครงการ Clean Cities Life เป็นโครงการที่รณรงค์ลดการปล่อยก๊าซคาร์บอนมอนนอกไซด์จากรถยนต์สู่อากาศ ด้วยการช่วยกันลดการใช้ยานพาหนะส่วนตัวที่มีการเผาไหม้ของเชื่อเพลิงในชีวิตประจำวันของชาวเมืองกรุง เพื่อสุขภาพและสิ่งแวดล้อมที่ดีขึ้นของเราทุกคน</p>
-                    <a href="https://freshzqzr.github.io/PJ_7Series/registerpage.html"><input type="button" id="buteventinfo1" class="buttonjoincp" value="เข้าร่วมแคมแปญ" style="font-family: 'Prompt', sans-serif;margin-right: 15%; margin-left: 15%;"></a>
+                    <p class="parainfo1"font-size="16px" style="margin-top: 0px;margin-bottom: 0px;">ยิ่งเราลดการขับขี่ยานพาหนะที่มีการเผาไหม้ของเชื้อเพลิง เท่ากับเรากำลังช่วยรักษาโลกของเราให้มีสุขภาพที่ดีขึ้น เพื่อให้โลกของเราไม่อารมณ์ร้อนใจเย็น และเพื่อสุขภาพของเราและคนรอบข้างที่เรารัก ก็ด้วยเช่นกัน มาร่วมเป็นส่วนหนึ่งที่จะรักษาโลกใบนี้ให้แข็งแรงกันเถอะ~</p>
+                    <a href="https://freshzqzr.github.io/PJ_7Series/registerpage.html"><input type="button" id="buteventinfo1" class="buttonjoincp" value="เข้าร่วมแคมเปญ" style="font-family: 'Prompt', sans-serif;margin-right: 15%; margin-left: 15%;"></a>
                 </div>
                 <div class="space3"></div>
                 <div class="imgshow">
