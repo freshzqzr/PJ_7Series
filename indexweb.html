@@ -24,12 +24,12 @@
             background: rgb(255, 255, 255);  
         }
         .space {
-            flex-grow: 8;
+            flex-grow: 6;
         }
         .container1{
             display: flex;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin-left: 18%;
+            margin-right: 18%;
         }
         .buttonmenu{
             border:none;
@@ -96,14 +96,104 @@
             }
         }
         /*End style section1 */
+        
 
-        /* style section2 */
+        .section2{
+            text-align: center;
+            width:100%;
+            height: auto;
+            background-color: #ffffff;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin: 0;
+        }
+        div.container3{
+            text-align: center;
+            justify-content: center;
+            width: -50%;
+        padding: 0%  20% 0% 20%;
+        align-items:center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 0;
+        }
+
+        .theBox3{
+            width: 234px;
+            height: 330px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            display:inline-block;
+
+        }
+
+        .txtBox3{
+            position: absolute;
+            height: 140px;
+            width: 100%;
+            background-color: #ffffff;
+            bottom: 0; 
+        }
+
+        h4{ 
+            padding:0;
+            margin:10px 0 10px 15px;
+            font-size:13;
+            font-weight:bold;
+            color:#e6540c;
+}
+
+        h5{ 
+            padding:0;
+            margin:10px 0 10px 15px;
+            font-size:16;
+            font-weight:400;
+            text-transform:uppercase;
+            color:rgb(230,230,230);
+        }
+
+        @media screen and (max-width: 1300px){
+            .section2,.container2{
+            width: 100%;
+            height: auto;}
+            div.container3{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr  1fr;
+                column-gap: 10px;
+                padding: 0%  40% 0% 40%;
+
+            }
+        }
+
+        @media screen and (max-width: 700px){
+            .section2,.container2,h2 {
+            width: 100%;
+            height: auto;}
+            div.container3{
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                padding: 0%  0% 0% 19%;
+                text-align: center;
+            justify-content: center;
+            }
+        }
+
+        
+
+
+        /* style section3 */
         .section3{
             width:100%;
             height: auto;
             background-color: #718f6b;
         }
         .container4{
+            height: auto;
             width:100%;
             display: flex;
             flex-direction: row;
@@ -150,8 +240,32 @@
             .space2 {
             height: 20px;
             }
-
         }
+
+        .section4{
+            width:100%;
+            height: auto;
+            background-color: #000000;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            color: white;
+        }
+        .container5{
+            height: auto;
+            width:100%;
+            text-align: left;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 700px){
+            .section4, .container5{
+            width: 100%;
+            height: auto;
+            padding-top: 3%;
+            padding-bottom: 3%;}
+        }
+
+
     </style>
 </head>
 <body>
@@ -183,6 +297,56 @@
             </div>
         </div>
 
+        <!--ส่วนที่2-->
+        <div class="section2">
+            <h2>ภาพกิจกรรมจากผู้ร่วมแคมแปญ</h2>
+
+            <div class="container3">
+                <div class="theBox3">
+                    <img src="http://travel.mthai.com/app/uploads/2013/08/infinity-tower-dubai-uae-1024x682.jpg">
+                    <div class="txtBox3">
+                        <h4>2014 02 16</h4>
+                        <p>Nunc lacinia ante nunc ac lobortis
+                            ipsum. Interdum adipiscing gravida
+                            odio porttitor sem non mi integer
+                            non faucibus.</p>
+                    </div>
+                </div>
+        
+                <div class="theBox3">
+                    <img src="http://travel.mthai.com/app/uploads/2012/09/10Two-International-Finance-Centre-Hong-Kong.jpg">
+                    <div class="txtBox3">
+                        <h4>2014 02 16</h4>
+                        <p>Nunc lacinia ante nunc ac lobortis
+                            ipsum. Interdum adipiscing gravida
+                            odio porttitor sem non mi integer
+                            non faucibus.</p>
+                    </div>
+                </div>
+        
+                <div class="theBox3">
+                    <img src="https://undubzapp.com/wp-content/uploads/2018/09/10-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%94%E0%B8%B9%E0%B9%84%E0%B8%9A1.jpg">
+                    <div class="txtBox3">
+                        <h4>2014 02 16</h4>
+                        <p>Nunc lacinia ante nunc ac lobortis
+                            ipsum. Interdum adipiscing gravida
+                            odio porttitor sem non mi integer
+                            non faucibus.</p>
+                    </div>
+                </div>
+
+                <div class="theBox3">
+                    <img src="https://travel.mthai.com/app/uploads/2018/11/Fantastic-Building-1.jpg">
+                    <div class="txtBox3">
+                        <h4>K'Tony</h4>
+                        <p>Nunc lacinia ante nunc ac lobortis
+                            ipsum. Interdum adipiscing gravida
+                            odio porttitor sem non mi integer
+                            non faucibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--ส่วนที่3-->
         <div class="section3">
             <div class="container4">
@@ -195,6 +359,26 @@
                 <div class="imgshow">
                     <img src="https://i.ibb.co/nbMY3Rz/Portrait-of-man-with-placard-and-protective-suit-on-global-strike-for-climate-change.jpg"  class="piccamp1">
                 </div>
+            </div>
+        </div>
+
+        <!--ส่วนที่4-->
+        <div class="section5">
+            <div class="container6">
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--Footer-->
+        <div class="section4"> 
+            <div class="container5">
+                <P style="margin: 0; padding-left: 15px">Ref</P>
+                <p style="margin: 0; padding-left: 15px" >www.skooldio.com</p>
+                <p style="margin: 0; padding-left: 15px" >www.w3schools.com</p>
             </div>
         </div>
 
